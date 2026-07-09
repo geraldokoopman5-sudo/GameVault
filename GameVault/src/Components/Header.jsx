@@ -1,11 +1,12 @@
+
 function Header(){
     
     return(
-        <div>
+        <div className="top">
             <h1>GameVault</h1>
          <h2>Game vault we keep your games dave on sum vault shif </h2>
-         </div>
-    )
+       </div>
+    );
 }
 
-export default Header
+export default Header;  
