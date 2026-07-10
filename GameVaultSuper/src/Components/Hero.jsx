@@ -1,15 +1,16 @@
-function Hero(){
-    return(
-        <div className="Hero">   
-        <h2>
-            Welcome to Game Vault!!!!
-            </h2>
-            <p> 
-                This a website that keeps track of all the games you have twin,
-                We lowkey better than steam
-            </p>
-        </div>
-    );
+import styles from "./Hero.module.css";
+
+function Hero() {
+  return (
+    <div className={styles.Hero}>
+      <h3>Welcome to GameVault!</h3>
+      <p>
+        GameVault is a platform that allows you to store and manage your favorite
+        games in one convenient location. With GameVault, you can easily keep track
+        of your game collection, discover new titles, and connect with other gamers.
+      </p>
+    </div>
+  );
 }
 
 export default Hero;

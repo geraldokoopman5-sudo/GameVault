@@ -1,11 +1,12 @@
-function Footer(){
-    return(
-        <div calssName="Footer">
-            <Footer>
-                Gmayne                2026
-            </Footer>
-        </div>
-    );
+import styles from "./Footer.module.css"
+
+function Footer() {
+  return (
+    <footer className={styles.Footer}>
+      <p>Created by Grake</p>
+      <p>2026</p>
+    </footer>
+  );
 }
 
 export default Footer;
