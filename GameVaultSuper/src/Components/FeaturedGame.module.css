@@ -1,7 +1,10 @@
-.FeaturedGame{
+.GameCard{
     text-align: center;
-    border:2px solid black;
-    border-radius:3px;
+  
     padding: 10px;
     
+}
+
+.GameCard p{
+    border-bottom: 2px dotted black;
 }

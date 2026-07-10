@@ -1,22 +1,19 @@
 import styles from "./FeaturedGame.module.css"
 
-function FeaturedGame() {
+function Gamecard(props) {
   return (
-    <div className={styles.FeaturedGame}>
-      <h3>Featured Game</h3>
+    <div className={styles.GameCard}>
 
-      <ul>
-        <ul>Title: Star Wars: Jedi Fallen Order</ul>
-        <ul>Genre: Action-Adventure, RPG, SoulsLike</ul>
-        <ul>Platform: PlayStation 5, Xbox Series X/S, PC</ul>
-        <ul>Release year: 2019</ul>
-        <ul>
-          Description: Play as Cal Kestis, a Padawan hunted by the Empire.
-        </ul>
-      </ul>
+      <h3>
+        Featured Game
+      </h3>
+
+      <p>Title: {props.title}</p>
+      <p>Genre: {props.genre}</p>
+      <p>Rating: {props.rating}</p>
 
     </div>
   );
 }
 
-export default FeaturedGame;
+export default Gamecard;
