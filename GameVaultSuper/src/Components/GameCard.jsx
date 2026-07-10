@@ -11,6 +11,7 @@ function Gamecard(props) {
       <p>Title: {props.title}</p>
       <p>Genre: {props.genre}</p>
       <p>Rating: {props.rating}</p>
+      {/* <p>Playing Status{props.status}</p> */}
 
     </div>
   );
