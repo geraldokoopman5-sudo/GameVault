@@ -15,19 +15,26 @@ function App() {
         title="Star Wars Jedi Fallen Order"
         genre="Action Adventure"
         rating={4}
+        owned={false}
+      
       />
 
       <Gamecard 
         title="Elden Ring"
         genre="RPG Soulslike"
         rating ={5}
+        owned={true}
       />
 
       <Gamecard 
         title="Minecraft"
         genre="Sandbox"
         rating={3}
+        owned={false}   
+
       />
+
+    
 
       <Footer/>
     </>
