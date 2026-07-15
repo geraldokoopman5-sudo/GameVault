@@ -31,10 +31,17 @@ function App() {
         genre="Sandbox"
         rating={3}
         owned={false}   
+        
 
       />
+      <Gamecard
+        title="Grand theft Auto 6"
+        genre="Actoin, Story"
+        rating={100}
+        owned={false}
+        status={true}
+        />
 
-    
 
       <Footer/>
     </>

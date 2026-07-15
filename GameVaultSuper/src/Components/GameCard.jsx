@@ -12,6 +12,7 @@ function Gamecard(props) {
       <p>Genre: {props.genre}</p>
       <p>Rating: {props.rating}</p>
      <Status owned={props.owned} />
+     <GameStatus status={props.status}/>
       
     </div>
 
@@ -33,6 +34,7 @@ function Gamecard(props) {
 //        return (props.owned ? <p>Owned ✅ </p> : <p>Not Owned ❌</p>); 
 // }
 
+//best and cleanest way to do conditional rendering.
 function Status(props) {
 
   const OwenedStat = <p>Owned ✅</p>
@@ -42,5 +44,11 @@ function Status(props) {
        return (props.owned ?  OwenedStat : OwenedStat2); 
 }
 
+function GameStatus(props){
+  const CommingSoon = "Coming Soon"
+  const Released = "Availible"
+
+  return (props.status ? CommingSoon : Released);
+}
 
 export default Gamecard;
