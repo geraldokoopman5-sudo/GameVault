@@ -5,43 +5,38 @@ import Gamecard from "./Components/GameCard.jsx";
 
 
 function App() {
+
+       const gameList = [
+  {
+    title: "Elden Ring",
+    genre: "Souls Like",
+    rating: 5,
+    owned: true,
+    status: false
+  },
+
+   {
+      title: "Minecraft",
+      genre: "Sandbox",
+      rating: 3,
+      owned: false,
+      status: true
+    }
+];
   return (
     <>
       <Header/>
-
       <Hero/>
-
-      <Gamecard 
-        title="Star Wars Jedi Fallen Order"
-        genre="Action Adventure"
-        rating={4}
-        owned={false}
-      
-      />
-
-      <Gamecard 
-        title="Elden Ring"
-        genre="RPG Soulslike"
-        rating ={5}
-        owned={true}
-      />
-
-      <Gamecard 
-        title="Minecraft"
-        genre="Sandbox"
-        rating={3}
-        owned={false}   
-        
-
-      />
-      <Gamecard
-        title="Grand theft Auto 6"
-        genre="Actoin, Story"
-        rating={100}
-        owned={false}
-        status={true}
+      {gameList.map((game) => (
+        <Gamecard
+          key={game.title}
+          title={game.title}
+          genre={game.genre}
+          rating={game.rating}
+          owned={game.owned}
+          status={game.status}
         />
-
+      ))}
 
       <Footer/>
     </>
